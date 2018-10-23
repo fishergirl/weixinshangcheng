@@ -1,0 +1,58 @@
+@import "~utils/base.less";
+.bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.4);
+  z-index: 1000;
+}
+.body{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1001;
+  transition: all .3s ease;
+  transform: translateY(100%);
+}
+.body.show{
+  transform: translateY(0);
+}
+.title{
+  .close{
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  :global{
+    .am-list-content{
+      text-align: center !important;
+      font-size: 30/@rem !important;
+      position: relative;
+    }
+  }
+  .border-1px-bottom;
+}
+.main{
+  height: 375/@rem;
+  overflow-y: scroll;
+}
+.foot{
+  padding: 30/@rem 0;
+  .border-1px-top;
+  :global{
+    .am-button-primary,.am-button-active{
+      background: #48B4C8 !important;
+      &>span{
+        color: #fff !important;
+      }
+    }
+    .am-button-primary.am-button-active{
+      background: #38a4b8 !important;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@import "~utils/base.less";
+@import "../../components/GoodsItem/style.less";
+.page{
+  font-size: 32/@rem;
+  .title{
+    height: 270/@rem;
+    background: #fff;
+    margin-bottom: 10/@rem;
+    text-align: center;
+    .status_icon{
+      margin-top: 30/@rem;
+      display: inline-block;
+      width: 120/@rem;
+      height: 120/@rem;
+      &.jingya{
+        background: url(http://image.haoyunqi.com.cn/wx_emoji_jingya.png) center no-repeat;
+        background-size: 100%;
+      }
+      &.danding{
+        background: url(http://image.haoyunqi.com.cn/wx_emoji_danding.png) no-repeat center;
+        background-size: 100%;
+      }
+      &.daxiao{
+        background: url(http://image.haoyunqi.com.cn/wx_emoji_daxiao.png) no-repeat center;
+        background-size: 100%;
+      }
+      &.kaixin{
+        background: url(http://image.haoyunqi.com.cn/wx_emoji_kaixin.png) no-repeat center;
+        background-size: 100%;
+      }
+      &.weixiao{
+        background: url(http://image.haoyunqi.com.cn/wx_emoji_weixiao.png) no-repeat center;
+        background-size: 100%;
+      }
+    }
+    .status_desc{
+      margin-top: 20/@rem;
+      font-weight: bold;
+      font-family: SimHei;
+      font-size: 40/@rem;
+    }
+  }
+  .order{
+    height: 100/@rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20/@rem;
+    background: #fff;
+    margin-bottom: 10/@rem;
+    .order_status{
+      color: #fa9a1d;
+    }
+  }
+  .user{
+    color: #999;
+  }
+  .block{
+    margin-bottom: 10/@rem;
+    background: #fff;
+    line-height: 65/@rem;
+    .sub_title{
+      padding: 0 20/@rem;
+      color: #333;
+      font-family: SimHei;
+      font-weight: bold;
+      height: .8rem;
+      line-height: 80/@rem;
+    }
+    .item{
+      padding: 0 20/@rem;
+      height: 65/@rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .block_border{
+      padding-bottom: 20/@rem;
+      .border-1px-bottom;
+    }
+  }
+  .foot{
+    height: 80/@rem;
+    padding: 0 20/@rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

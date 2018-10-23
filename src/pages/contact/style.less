@@ -1,0 +1,72 @@
+@import "~utils/base.less";
+
+.contact,.address{
+  :global{
+    .am-navbar-left,.am-navbar-title{
+      color: #48b4c8;
+    }
+    .am-list-content{
+      margin-left: 15/@rem;
+    }
+  }
+  .list{
+    margin-bottom: 20/@rem;
+    .phone_edit{
+      :global{
+        .am-list-extra{
+          flex-basis:45%;
+        }
+      }
+      .phone_active{
+        font-size: 26/@rem;
+        color: #48b4c8;
+      }
+      .phone_default{
+        font-size: 26/@rem;
+        margin-left: 5/@rem;
+        color: #999;
+      }
+      .phone_action{
+        font-size: 26/@rem;
+        margin-left: 5/@rem;
+        color: #999;
+        span:last-child{
+          margin-left: 80/@rem;
+        }
+      }
+    }
+  }
+  .add{
+    color: #48b4c8;
+    text-align: center;
+    margin: 50/@rem 0 ;
+  }
+}
+.addPage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  :global{
+    .am-button-primary,.am-button-active{
+      background: #48B4C8 !important;
+      &>span{
+        color: #fff !important;
+      }
+    }
+    .am-button-primary.am-button-active{
+      background: #38a4b8 !important;
+    }
+  }
+}
+.add_btn{
+  margin-top: 60/@rem;
+}
+.addList{
+  :global{
+    .am-list-item .am-input-label.am-input-label-5{
+      width: 33% !important;
+    }
+  }
+}

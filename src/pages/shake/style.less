@@ -1,0 +1,216 @@
+@import "~utils/base.less";
+
+.page{
+  min-height: 100vh;
+  background-color: #e4f0c4;
+}
+.audio{
+  width:0;
+  height:0;
+  overflow:hidden;
+  opacity: 0;
+  text-indent:-999px;
+  audio{
+    width:0;
+    height:0;
+  }
+}
+.content{
+  position: relative;
+  .bg{
+    .indexBg{
+      width: 100%;
+    }
+    .shakeimg{
+      position: absolute;
+      width: 63.125%;
+      top: 0;
+      left: 50%;
+      margin-left: -31.5625%;
+      margin-top: 51.875%;
+    }
+    .cp{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin-top: 33%;
+    }
+  }
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 34/@rem;
+  line-height: 60/@rem;
+  color: #222;
+  img{
+    width: 120/@rem;
+    height: 120/@rem;
+  }
+}
+.shake{
+  animation: shake .8s linear infinite;
+}
+
+@keyframes shake{
+  0%{
+    transform:rotate(0deg);
+  }
+  25%{
+    transform:rotate(20deg);
+  }
+  50%{
+    transform:rotate(0deg);
+  }
+  75%{
+    transform:rotate(20deg);
+  }
+  100%{
+    transform:rotate(0deg)
+  }
+}
+
+.modal{
+  overflow: scroll;
+  min-height: 200/@rem;
+  max-height: 500/@rem;
+  text-align: left;
+  padding: 0 30/@rem;
+  margin-bottom: 20/@rem;
+  color: #000;
+}
+.result_panel{
+  display: none;
+  .mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+  }
+  .result_ctn{
+    position: fixed;
+    top: -150%;
+    transform: translateY(-50%);
+    transition: all .3s ease;
+    width: 750/@rem;
+    height: 750/@rem;
+    background: url(http://image.haoyunqi.com.cn/wx_prize_notice.png) no-repeat;
+    background-size: 85% 100%;
+    background-position: center;
+    .btn_close{
+      position: absolute;
+      width: 60/@rem;
+      height: 60/@rem;
+      right: 66/@rem;
+      top: 8/@rem;
+    }
+    .btn_ok{
+      position: absolute;
+      width: 100/@rem;
+      height: 100/@rem;
+      left: 50%;
+      top: 465/@rem;
+      transform: translateX(-50%);
+      color: #FA4F3F;
+      line-height: 100/@rem;
+      text-align: center;
+      font-size: 32/@rem;
+      padding-left: 8/@rem;
+    }
+    .result_txt{
+      position: absolute;
+      width: 500/@rem;
+      left: 50%;
+      top: 120/@rem;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #555;
+      .result_title{
+        color: red;
+        font-size: 36/@rem;
+      }
+      .result_mes{
+        font-size: 32/@rem;
+      }
+    }
+  }
+  &.show{
+    display: block;
+  }
+  &.show .result_ctn{
+    top: 50%;
+  }
+}
+
+.shakeRecord{
+  height: 100vh;
+  overflow-y: scroll;
+  .title_bg{
+    img{
+      width: 100%;
+    }
+    h3{
+      text-align: center;
+      font-size: 32/@rem;
+    }
+  }
+  .list{
+    .item{
+      display: flex;
+      align-items: center;
+      padding: 20/@rem;
+      .border-1px-bottom;
+      &>div{
+        margin-left: 20/@rem;
+        font-size: 30/@rem;
+        line-height: 60/@rem;
+        p:nth-of-type(1){
+          color: #000;
+        }
+        p:nth-of-type(2){
+          color: #999;
+        }
+      }
+    }
+  }
+}
+.prize {
+  height: 100vh;
+  overflow-y: scroll;
+  .title{
+    height: 80/@rem;
+    line-height: 80/@rem;
+    text-align: center;
+    .border-1px-bottom;
+  }
+  .list{
+    background: #fff;
+    .item{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20/@rem;
+      padding-right: 10/@rem;
+      .border-1px-bottom;
+      span{
+        display: inline-block;
+        padding: 20/@rem;
+      }
+    }
+  }
+}
+
+.no_data{
+  text-align: center;
+  padding-top: 360/@rem;
+}
+.foot{
+  height: 80/@rem;
+  line-height: 80/@rem;
+  text-align: center;
+}

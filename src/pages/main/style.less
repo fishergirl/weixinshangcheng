@@ -1,0 +1,121 @@
+@import "../../utils/base.less";
+.banner{
+  width: 100%;
+  height: 333/@rem !important;
+}
+.banner{
+  :global{
+    .slider-list{
+      height: 333/@rem !important;
+    }
+  }
+}
+.typeList{
+  margin: 20/@rem 0;
+}
+.type_box{
+  float: left;
+  margin: 10/@rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 350/@rem;
+  height: 160/@rem;
+  overflow: hidden;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  &:nth-of-type(2n+1){
+    margin-left: 14/@rem;
+  }
+  .type_left{
+    font-size: 0;
+    margin: 0 15/@rem;
+    img{
+      width: 105/@rem;
+      height: 105/@rem;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+  .type_right{
+    flex: 1;
+    overflow: hidden;
+  }
+  .type_subTitile{
+    font-size: 30/@rem;
+    color: #000;
+  }
+  .no_wrap{
+    color: #999;
+  }
+}
+.tip{
+  width: 100%;
+  height: 100/@rem;
+  line-height: 100/@rem;
+  text-align: center;
+  background: #fff;
+  margin-top: 30/@rem;
+  clear: both;
+}
+.hot_goods{
+  background: #fff;
+  margin-bottom: 120/@rem;
+  .hot_goods_item{
+    margin-bottom: 40/@rem;
+  }
+  .img_box{
+    margin: 0 20/@rem 20/@rem;
+    border: 1px solid #f5f5f5;
+    height: 410/@rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .hot_title{
+    line-height: 40/@rem;
+    font-size: 30/@rem;
+    font-weight: bold;
+    padding: 20/@rem 40/@rem;
+    text-align: justify;
+  }
+  .hot_price_box{
+    padding: 0 40/@rem 20/@rem;
+    font-size: 20/@rem;
+    .special_price{
+      color: red;
+      margin-right: 10/@rem;
+      span{
+        font-size: 40/@rem;
+      }
+    }
+    .base_price{
+      color: #999;
+      margin-right: 20/@rem;
+      text-decoration:line-through;
+    }
+    .express{
+      color: #9a9a00;
+    }
+    .hot_btn,.active_hot_btn{
+      float: right;
+      border: 1px solid #48b4c8;
+      color: #48b4c8;
+    }
+  }
+}
+.none_data{
+  text-align: center;
+  font-size: 30/@rem;
+  color: #999;
+}
+.no_wrap{
+  width: 100%;
+  height: 40/@rem;
+  .no-wrap;
+}

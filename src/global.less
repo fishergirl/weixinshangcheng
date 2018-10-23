@@ -1,0 +1,55 @@
+@import "~utils/base.less";
+html, body, :global(#root) {
+  height: 100%;
+}
+body{
+  background: #f5f5f5 ;
+  margin: 0 ;
+  padding: 0 ;
+}
+p,ul,li,ol,dl,dt,dd{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+:global{
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .blue{
+    color: #48b4c8;
+  }
+  .red{
+    color: red;
+  }
+  .gray{
+    color: #999 !important;
+  }
+  .orange{
+    color: #fa9a1d;
+  }
+  .icon-danxuan{
+    color: #48b4c8;
+  }
+  .icon-duigou{
+    color: #48b4c8;
+  }
+  //List 组件样式重置
+  .am-list-item{
+    padding-left: 0 !important;
+  }
+  .am-list-line{
+    padding-left: 30/@rem;
+  }
+  .am-input-item{
+    height: 56px !important;
+  }
+  //.am-list-item .am-list-line .am-list-content{
+  //  line-height: 2.5 !important;
+  //}
+}

@@ -1,0 +1,101 @@
+@import "../../utils/base.less";
+.box{
+  background: #fff;
+  min-height: 150/@rem;
+  margin: 10/@rem 0;
+  padding: 20/@rem 20/@rem;
+  &>div{
+    display: inline-block;
+    vertical-align: top;
+    &:nth-of-type(3){
+      margin-top: 25/@rem;
+      float: right;
+    }
+  }
+  .img{
+    width: 120/@rem;
+    height: 90/@rem;
+    border: 1px solid #f5f5f5;
+    margin-right: 20/@rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+    }
+  }
+  .mes{
+    line-height: 45/@rem;
+    margin: 10/@rem 0;
+    width: 62%;
+    p:nth-of-type(1){
+      width: 100%;
+      font-size: 30/@rem;
+      .no-wrap;
+    }
+    p:nth-of-type(2){
+      font-size: 20/@rem;
+      color: red;
+      span{
+        font-size: 30/@rem;
+      }
+    }
+    p:nth-of-type(3){
+      width: 93%;
+      color: #666;
+      font-size: 26/@rem;
+      line-height: 30/@rem;
+    }
+  }
+  .mes.has_counter{
+    width: 40%;
+  }
+  .counter{
+    color: #48b4c8;
+    box-sizing: border-box;
+    border: 1px solid #48b4c8;
+    border-radius: 5px;
+    margin-top: 10/@rem !important;
+    display: flex;
+    span,.input{
+      display: inline-block;
+      width: 90/@rem;
+      height: 90/@rem;
+      line-height: 90/@rem;
+      font-size: 40/@rem;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .input{
+      padding: 0 !important;
+      border-left: 1px solid #48b4c8;
+      border-right: 1px solid #48b4c8;
+      box-sizing: border-box;
+      height: 100% !important;
+      :global{
+        .am-list-line{
+          padding: 0 !important;
+          .am-input-control{
+            height: 88/@rem;
+            line-height: 100/@rem;
+            display: flex;
+            align-items: center;
+          }
+          input{
+            margin-top: 2px;
+            text-align: center;
+            color: #48b4c8;
+          }
+        }
+        .am-list-line:after{
+          height: 0 !important;
+        }
+      }
+    }
+  }
+  .counter_t{
+    margin-right: 20/@rem;
+  }
+}

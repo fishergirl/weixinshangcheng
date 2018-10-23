@@ -1,0 +1,263 @@
+@import "~utils/base.less";
+
+.info{
+  padding-top: 20/@rem;
+  height: 360/@rem;
+  background-color: #48b4c8;
+  //background: url("../../assets/bg.jpg") 0 0 no-repeat;
+  background-size: contain;
+  text-align: center;
+  color: #fff;
+  .avatar{
+    width: 186/@rem;
+    height: 186/@rem;
+    border-radius: 50%;
+    background: rgba(255,255,255,.3);
+    overflow: hidden;
+    border: 9/@rem solid rgba(255,255,255,.3);
+    margin: 0 auto 10/@rem;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .name{
+    font-size: 36/@rem;
+  }
+  .score{
+    display: inline-block;
+    padding: 0 10/@rem;
+    height: 60/@rem;
+    border:1px solid #fff;
+    border-radius: 5px;
+    font-size: 32/@rem;
+    i{
+      font-size: 36/@rem;
+      margin-right: 20/@rem;
+    }
+  }
+}
+.list{
+  margin-top: 20/@rem;
+}
+//优惠卷
+.coupon_page{
+  height: 100%;
+  overflow-y: scroll;
+  .title,.foot{
+    text-align: center;
+    padding: 30/@rem 0;
+    font-size: 20/@rem;
+    .a{
+      color: #48b4c8;
+    }
+  }
+  .coupon_list{
+    .coupon_item{
+      margin: 10/@rem 0 20/@rem 20/@rem;
+      height: 160/@rem;
+      position: relative;
+      .item_left{
+        float: left;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 220/@rem;
+        height: 100%;
+        background: #48b4c8;
+        border-right: 1px dashed #fff;
+        box-sizing: border-box;
+        color: #fff;
+        p:nth-of-type(1){
+          font-size: 30/@rem;
+          line-height: 60/@rem;
+          span{
+            font-size: 60/@rem;
+          }
+        }
+        p:nth-of-type(2){
+          font-size: 20/@rem;
+          line-height: 30/@rem;
+        }
+      }
+      .item_right{
+        float: left;
+        width: 490/@rem;
+        height: 100%;
+        background: #fff;
+        p{
+          padding-left: 20/@rem;
+        }
+        p:nth-of-type(1){
+          font-size: 30/@rem;
+          margin: 26/@rem 0;
+          font-weight: bold;
+        }
+        p:nth-of-type(2){
+          font-size: 20/@rem;
+        }
+      }
+      .yuan_up,.yuan_down{
+        width: 20/@rem;
+        height: 20/@rem;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #f5f5f5;
+        position: absolute;
+        left: 220/@rem;
+      }
+      .yuan_up{
+        top: 0;
+        transform: translate(-50%, -50%);
+      }
+      .yuan_down{
+        bottom: 0;
+        transform: translate(-50%, 50%);
+      }
+    }
+    &.disable{
+      .coupon_item{
+        .item_left{
+          background: #d5d5d5;
+        }
+      }
+    }
+  }
+  .no_data{
+    font-size: 32/@rem;
+    line-height: 60/@rem;
+    text-align: center;
+  }
+}
+
+//邀请好友
+.invite{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .bg{
+    width: 100%;
+    height: auto;
+  }
+  .qr{
+    width: 290/@rem;
+    height: 290/@rem;
+    position: absolute;
+    top: 307/@rem;
+    left: 230/@rem;
+  }
+  .text{
+    position: absolute;
+    width: 100%;
+    top: 636/@rem;
+    left: 0;
+    text-align: center;
+    p{
+      width: 390/@rem;
+      margin: 0 auto;
+    }
+    p.blue{
+      color: #37b0c9;
+      font-size: 30/@rem;
+      line-height: 37.5/@rem;
+      font-family: SourceHanSansCN-Medium;
+      margin-top: 30/@rem;
+    }
+    p.red{
+      color: #e9490f;
+      font-size: 26/@rem;
+      padding: 20/@rem 0 0;
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &:last-child{
+          margin-left: 30/@rem;
+        }
+        i{
+          color: #00d400;
+          font-size: 75/@rem;
+        }
+        span{
+          font-weight: bold;
+          font-family: SourceHanSansCN-Medium;
+          font-size: 20/@rem;
+        }
+      }
+    }
+  }
+  .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    .arrow{
+      position: absolute;
+      top: 0;
+      left: 533/@rem;
+      width: 186/@rem;
+      height: 140/@rem;
+    }
+    .ctx{
+      position: absolute;
+      top: 98/@rem;
+      left: 200/@rem;
+      width: 425/@rem;
+      height: 106/@rem;
+    }
+  }
+}
+
+//我的红包
+.myRedPack{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F9FAFC;
+  text-align: center;
+  p:nth-of-type(1){
+    margin: 80/@rem 0 40/@rem;
+    color: red;
+    font-size: 32/@rem;
+    span{
+      font-size: 80/@rem;
+    }
+  }
+  p:nth-of-type(2){
+    color: #999;
+    font-size: 36/@rem;
+  }
+  p:nth-of-type(3), p:nth-of-type(4){
+    color: red;
+    font-size: 32/@rem;
+    margin-top: 20/@rem;
+  }
+  img{
+    margin-top: 20/@rem;
+    margin-bottom: 20/@rem;
+    width: 100%;
+    height: auto;
+  }
+  .btn{
+    margin-bottom: 30/@rem;
+    background: #48B4C8 !important;
+    color: #fff !important;
+    &.disable{
+      background: #EBEBEB !important;
+      color: #999 !important;
+    }
+  }
+}
+

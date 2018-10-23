@@ -1,0 +1,44 @@
+@import "~utils/base.less";
+.popup{
+  :global{
+    .icon-youhuiquan{
+      font-size: 38/@rem;
+      color: red;
+    }
+    .am-list-item{
+      .border-1px-bottom;
+    }
+    .am-list-item:last-child:after{
+      border: none;
+    }
+    .am-list-body:before{
+      background: #fff !important;
+    }
+    .am-list-line:after{
+      background: #fff !important;
+    }
+    .am-list-item .am-list-thumb:first-child{
+      margin-left: 15px !important;
+      margin-right: 0 !important;
+    }
+  }
+  .loadMore{
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+  }
+}
+.tip{
+  text-align: center;
+  margin-top: 20/@rem;
+}
+.gray{
+  i{
+    color: #999 !important;
+  }
+  :global{
+    .am-list-content{
+      color: #999 !important;
+    }
+  }
+}

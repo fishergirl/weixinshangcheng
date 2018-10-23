@@ -1,0 +1,46 @@
+@import "~utils/base.less";
+
+.title{
+  height: 100/@rem;
+  line-height: 100/@rem;
+  text-align: center;
+  font-size: 30/@rem;
+}
+
+.coupon_item{
+  height: 160/@rem;
+  background: #fff;
+  margin: 0 20/@rem 20/@rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 2px dashed #48B4C8;
+  border-right: 2px dashed #48B4C8;
+  &.galy{
+    border-left: 2px dashed #d6d6d6;
+    border-right: 2px dashed #d6d6d6;
+    &>div{
+      background: #d6d6d6;
+    }
+  }
+  &>div{
+    height: 100%;
+    background: #48B4C8;
+    color: #fff;
+  }
+  .coupon_l{
+    flex: 1;
+    padding: 20/@rem;
+    font-size: 20/@rem;
+    span{
+      font-size: 36/@rem;
+    }
+  }
+  .coupon_r{
+    width: 210/@rem;
+    font-size: 30/@rem;
+    text-align: center;
+    line-height: 160/@rem;
+    border-left: 1px dashed #fff;
+  }
+}

@@ -1,0 +1,126 @@
+@import "~utils/base.less";
+@import "../../components/GoodsItem/style.less";
+.tabs_wrap{
+  position: relative;
+}
+.tabs{
+  height: 84/@rem;
+  line-height: 84/@rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+.tabs .tab_item{
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+.tabs .tab_item.active{
+  color: #4FB3C8;
+}
+.line{
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  width: 19%;
+  height: 2px;
+  background: #4FB3C8;
+  margin-left: 3%;
+}
+.line.transition{
+  transition: all .2s ease;
+}
+.swiper{
+  position: absolute;
+  top:84/@rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  :global{
+    .b-scroll-content{
+      min-height: 101%;
+    }
+  }
+}
+.no_tip{
+  :global{
+    .b-pullup-wrapper{
+      display: none !important;
+    }
+  }
+}
+.orders_list{
+  //min-height: 100vh;
+  background: #f5f5f5;
+  padding-top: 20/@rem;
+}
+.order{
+  background: #fff;
+  margin-bottom: 20/@rem;
+  color: #000;
+  .order_title{
+    height: 70/@rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20/@rem;
+    .order_date{
+      flex: 1;
+      margin-left: 20/@rem;
+      color: #999;
+    }
+    .order_status{
+      color: #fa9a1d;
+    }
+  }
+  .item{
+    .border-1px-bottom;
+    margin: 0 !important;
+  }
+  .message{
+    height: 90/@rem;
+    line-height: 90/@rem;
+    text-align: right;
+    padding-right: 20/@rem;
+    .border-1px-bottom;
+  }
+  .foot{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .dai{
+      margin-right: 20/@rem;
+      line-height: 80/@rem;
+    }
+    .btn{
+      margin: 20/@rem 20/@rem 20/@rem 0;
+      color: #fff;
+      background: #acacac;
+      &:before{
+        border-color: #acacac !important;
+      }
+    }
+    .btn.btn_hover{
+      background: #bcbcbc;
+      &:before{
+        border-color: #bcbcbc !important;
+      }
+    }
+    .btn.active{
+      background: #ff393a;
+      &:before{
+        border-color: #ff393a !important;
+      }
+    }
+  }
+}
+.no_data{
+  text-align: center;
+  padding-top: 460/@rem;
+}
+.box{
+  .border-1px-bottom;
+  margin: 0;
+}

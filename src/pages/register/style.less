@@ -1,0 +1,46 @@
+@import "~utils/base.less";
+.list{
+  :global{
+    .am-list-item .am-input-label.am-input-label-5{
+      width: 30px;
+    }
+    .am-input-extra{
+      overflow: visible !important;
+    }
+  }
+  .yan{
+    display: inline-block;
+    width: 100/@rem;
+    text-align: center;
+    padding: 14/@rem 0;
+    border: 1px solid #48B4C8;
+    border-radius: 2px;
+    color: #48B4C8;
+    box-sizing: border-box;
+    &.disable{
+      border: none;
+      background: #d5d5d5;
+      color: #fff;
+    }
+  }
+}
+.add_btn{
+  margin-top: 60/@rem;
+}
+.page{
+  i{
+    color: #48B4C8;
+    font-size: 17px;
+  }
+  :global{
+    .am-button-primary,.am-button-active{
+      background: #48B4C8 !important;
+      &>span{
+        color: #fff !important;
+      }
+    }
+    .am-button-primary.am-button-active{
+      background: #38a4b8 !important;
+    }
+  }
+}
